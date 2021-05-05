@@ -22,6 +22,8 @@ spec:
             configMapKeyRef:
               name: pipeline-install-config
               key: autoUpdatePipelineDefaultVersion
+        - name: TOKEN_REVIEW_AUDIENCE: 
+          value: ml-pipeline
         - name: POD_NAMESPACE
           valueFrom:
             fieldRef:
